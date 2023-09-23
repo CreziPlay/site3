@@ -1,0 +1,11 @@
+footer{
+background: black;
+color: white;
+}
+footer>.container>.container__row>ul>.drstr:hover{
+background-color: transparent;
+color: #BE0000;
+}
+footer>.container>.container__row>ul>.drstr>a:hover{
+color: #BE0000;
+}
