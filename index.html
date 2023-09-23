@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/origin.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/heder.css">
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="js/slider.js"></script>
+	<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // инициализация слайдера
+      var slider = new SimpleAdaptiveSlider('.slider', {
+        autoplay: true,
+        interval: 10000,
+      });
+    });
+  </script>
+	<title>StydioKiss</title>
+</head>
+<body>
+
+<nav>
+<div class="container">
+	<div class="container__row">
+		<div class="nav_bar">
+			<div class="logo">
+				<img src="img/Group80.svg" alt="#">
+				<p class="txt_logo">StudioKiss</p>
+			</div>
+				<ul class="burger-menu">
+					<li class="burger-menu_button">
+						<a href="" class="burger-menu_butto">
+						<span class="burger-menu_lines"></span>
+
+					</a>
+
+					</li>
+	
+
+					<div class="burger-menu_nav">
+					<li class="burger-menu_link"><a href="">О нас</a></li>
+					<li class="burger-menu_link"><a href="">Наши услуги</a></li>
+					<li class="burger-menu_link"><a href="">Контакты</a></li>
+					<li class="burger-menu_link"><a href="">Фотогалерея</a></li>	
+
+
+					</div>	
+				</ul>	
+					<div class="burger-menu_overlay"></div>	
+			<div class="nav_ct">
+				<ul>
+				<li class="drstr"><a href="">О нас</a></li>
+				</ul>
+				<ul>
+				<li class="drstr"><a href="">Наши услуги</a></li>
+			</ul>
+			<ul>
+				<li class="drstr"><a href="">Контакты</a></li>
+			</ul>
+			<ul>
+				<li class="drstr"><a href="">Фотогалерея</a></li>
+				</ul>
+				<div class="kontaks">
+					<p class="kont">StydioKiss@gmail.ru</p>
+					<p class="kont">+79502650842</p>
+				</div>
+
+			</div>
+			<div class="sotseti">
+				<ul><li>
+						<a href="https://color.romanuke.com/">							
+							<i class="fa fa-telegram fa-2x" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://color.romanuke.com/">
+							<i class="fa fa-odnoklassniki fa-2x" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://color.romanuke.com/">
+							<i class="fa fa-vk fa-2x" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="avtoriz">
+					<button onclick="openFormAvt()" class="open_avt" id="open_avt">
+
+						<form action="#" method="POST">
+
+							<label name="login_lb" class="user_login" id="login_lb"></label></form>
+							
+
+
+
+						</p>
+					</button>
+
+				<div class="user">
+					<li>			
+							<button onclick="openFormAvt()" class="open_avt_user">
+							<i class="fa fa-user fa-4x" aria-hidden="true"></i>
+						</button>
+					</li>
+				</div>
+				
+
+
+			</div>
+
+
+
+
+		</div>	
+	</div>
+</div>
+
+
+</nav>
+
+<header>
+
+<div class="form_reg" id="Avt">
+
+<div class="container_avt">
+
+<div class="line_exit">
+	<span></span>
+	<button onclick="closeFormAvt()" class="close_avt"><i class="fa fa-times fa-2x" aria-hidden="true"></i></button>
+</div>
+		<form action="#" method="POST">
+		Login:<input type="text" name="logus">
+		Password:<input type="password" name="passer">
+		<span></span>		
+		<input type="submit" name="vhod" class="vhod" value="вход">
+		</form>
+		<div>
+		<span></span>	
+		<button onclick="openFormReg()" class="open_reg">
+		Нет аккаунта?
+		</button>			
+
+
+		</div>
+
+</div>
+	
+
+
+</div>
+
+
+
+
+<div class="form_reg" id="Reg">
+
+<div class="container_avt">
+
+<div class="line_exit">
+	<span></span>
+	<button onclick="closeFormReg()" class="close_avt"><i class="fa fa-times fa-2x" aria-hidden="true"></i></button>
+	</div>
+<form  method="POST">
+Login:<input type="text" name="loguser">
+Password:<input type="password" name="pasuser">
+Email:<input type="text" name="emuser">
+<span></span>
+<input type="submit" name="add" class="vhod" value="Зарегистрироватся">
+</form>	
+<div>
+	<span></span>
+	<button onclick="openFormAvtOn()" class="open_reg">
+		Есть аккаунт?
+	</button>
+
+</div>	
+
+</div>
+
+
+
+</div>
+<div class="form_reg" id="zks">
+
+<div class="container_avt">
+<div class="ln_exit">
+<span></span>
+<button class="close_avt" onclick="closezakaz()"><i class="fa fa-times fa-2x" aria-hidden="true"></i></button>
+</div>	
+	<form action="#" method="POST"><?
+
+
+</form>
+
+
+</div>
+</div>
+<div class="form_reg" id="prof">
+
+<div class="container_avt">
+
+<div class="prof_icon">
+<div class="prof_ic"><i class="fa fa-user fa-3x"aria-hidden="true"></i></div>
+<button onclick="closeprof()" class="close_avt"><i class="fa fa-times fa-2x" aria-hidden="true"></i></button>
+</div>
+<form  method="POST">
+
+<span></span>
+<input type="submit" name="vixod" class="vhod" value="Выход">
+</form>	
+<button onclick="openzakaz()" class="zk_b">Заказы</button>
+<div>
+</div>	
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="container" id="Hedr">
+	<div class="container__row">
+		<div class="heder_con">
+			<form class="forma" action="#" method="POST">
+				<h1>Заказать мероприятие</h1>
+				<div class="line_forma">
+					<p class="mer">Мероприятия</p>
+					<div class="select">
+	    				<input class="select__input" type="hidden" name="name_z">
+	    				<div class="select__head">Выберите</div>
+	   					 <ul class="select__list" style="display: none;">
+	   					 			
+	    				</ul>
+					</div>					
+				</div>
+				<div class="line_forma">
+					<p class="mer">Фамилия</p>
+					<input type="text" name="fam_mer" class="input_forma">
+				</div>
+				<div class="line_forma">
+					<p class="mer">Имя</p>
+					<input type="text" name="name" class="input_forma">
+				</div>
+				<div class="line_forma">
+					<p class="mer">Отчество</p>
+					<input type="text" name="otch" class="input_forma">
+				</div>
+				<div class="line_forma">
+					<p class="mer">Дата мероприятия</p>
+					<input type="date" name="date_z" class="input_forma">
+				</div>	
+			
+				<input type="submit" name="form_zak" value="Заказать" class="btn_form">											
+			</form>	
+
+			<div class="fotos">
+					<h1>Наши студии</h1><br>
+					<div class="slideshow-container">
+
+					<div class="mySlides">
+						<img src="img/styd2.jpg" alt="#"><br>
+					  <p>Sit mollis leo, augue amet, malesuadaSit mollis leo, augue amet, malesuadaSit mollis leo, augue amet, malesuadaSit</p><br>
+					  <div>
+					  	<p>10000P</p>
+					 		<button class="autho">Подробнее</button>
+					 		<span></span>
+					  </div>
+					</div>
+
+					<div class="mySlides">
+						<img src="img/upldVMnQoQ.jpg.900x600.jpg" alt="#"><br>
+					  <p>Sit mollis leo, augue amet, malesuadaSit mollis leo, augue amet, malesuadaSit mollis leo, augue amet, malesuadaSit mollis leo, augue amet,</p>
+					  <div>
+					  <p>12000P</p>
+					  <button class="autho">Подробнее</button>
+					  <span></span>
+					  </div>
+
+					</div>
+
+					<div class="mySlides">
+						<img src="img/asd1.png" alt="#"><br>
+					  <p>Augue amet, malesuadaSit mollis leo, augue amet, malesuadaSit mollis leo, augue amet,</p>
+				 		 <div>
+					  <p>11000P</p>
+					  <button class="autho">Подробнее</button>
+					  <span></span>
+					  </div>
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1)"><img src="img/left.svg" alt="#"></a>
+					<a class="next" onclick="plusSlides(1)"><img src="img/right.svg" alt="#"></a>
+
+					</div>
+
+					<div class="dot-container">
+					  <span class="dot" onclick="currentSlide(1)"></span> 
+					  <span class="dot" onclick="currentSlide(2)"></span> 
+					  <span class="dot" onclick="currentSlide(3)"></span> 
+					</div>
+
+			</div>
+		</div>
+	</div>
+
+	<h1>Наши работы</h1>
+</div>
+
+</header>
+<div class="red">
+	<div class="end_heder">
+		<div class="treyg">
+			<div class="bl_tr"></div>
+			<div class="wh_tr"></div>
+
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<main class="slide_main">
+	<div class="container">
+		<div class="container__row">
+		<div class="slider">
+    <div class="slider__wrapper">
+      <div class="slider__items">
+        <div class="slider__item">
+          <img class="img-fluid" src="img/asd1.png" alt="..." width="800" height="400" loading="lazy">
+        </div>
+        <div class="slider__item">
+          <img class="img-fluid" src="img/styd2.jpg" alt="..." width="800" height="400" loading="lazy">
+        </div>
+        <div class="slider__item">
+          <img class="img-fluid" src="img/pomeshchenie.jpg" alt="..." width="800" height="400" loading="lazy">
+        </div>
+        <div class="slider__item">
+          <img class="img-fluid" src="img/upldVMnQoQ.jpg.900x600.jpg" alt="..." width="800" height="400" loading="lazy">
+        </div>
+      </div>
+    </div>
+    <ul class="ul_slide">
+     <li class="li_slide">
+    	<a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>	
+    </li>
+    </ul>
+   <ul class="ul_slide_r">
+   	
+   		<li class="li_slide_r">
+   				<a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+
+
+   		</li>
+   </ul>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+	</div>
+</main>
+<main class="yslygi">
+
+	<h1>Наши услуги</h1>
+	<div class="treyg_w">
+			<div class="bl_tr_w"></div>
+			<div class="wh_tr_w"></div>
+
+	</div>
+	<div class="container">
+		<div class="container__row">
+
+			<div class="kart_ysl">
+				<img src="img/wtasa.png" class="img_kart" alt="#">
+				<div class="red_line"></div>
+				<h2>Sit mollis leo, augue amet, malesuada</h2>
+				<p>Sit mollis leo, augue amet, malesuadaSit mollis leo, augue amet, malesuadaSit mollis leo, augue amet, malesuadaSit mollis leo, augue amet, malesuadaSit mollis leo, augue amet, malesuadaSit mollis leo, augue amet, malesuada</p>
+				<div class="botom_kart">
+					<div class="cena">2332P</div>
+					<button class="btn_kart">Купить</button>
+
+				</div>
+			</div>
+						<div class="kart_ysl">
+				<img src="img/wtasa.png" class="img_kart" alt="#">
+				<div class="red_line"></div>
+				<h2>Sit mollis leo, augue amet, malesuada</h2>
+				<p>Sit mollis leo, augue amet, malesuadaSit mollis leo, augue amet, malesuadaSit mollis leo, augue amet, malesuadaSit mollis leo, augue amet, malesuadaSit mollis leo, augue amet, malesuadaSit mollis leo, augue amet, malesuada</p>
+				<div class="botom_kart">
+					<div class="cena">2332P</div>
+					<button class="btn_kart">Купить</button>
+
+				</div>
+			</div>
+
+						<div class="kart_ysl">
+				<img src="img/wtasa.png" class="img_kart" alt="#">
+				<div class="red_line"></div>
+				<h2>Sit mollis leo, augue amet, malesuada</h2>
+				<p>Sit mollis leo, augue amet, malesuadaSit mollis leo, augue amet, malesuadaSit mollis leo, augue amet, malesuadaSit mollis leo, augue amet, malesuadaSit mollis leo, augue amet, malesuadaSit mollis leo, augue amet, malesuada</p>
+				<div class="botom_kart">
+					<div class="cena">2332P</div>
+					<button class="btn_kart">Купить</button>
+
+				</div>
+			</div>
+
+
+
+
+		</div>
+
+	</div>
+
+</main>
+<footer>
+	<div class="container">
+		<div class="container__row">
+
+				<ul>
+					<li class="drstr"><a href="">О нас</a></li>
+				</ul>
+				<ul>
+					<li class="drstr"><a href="">Наши услуги</a></li>
+				</ul>
+				<ul>
+					<li class="drstr"><a href="">Контакты</a></li>
+				</ul>
+				<ul>
+					<li class="drstr"><a href="">Фотогалерея</a></li>
+				</ul>	
+				
+				<div class="kontaks">
+					<p class="kont">StydioKiss@gmail.ru</p>
+					<p class="kont">+79502650842</p>
+				</div>
+				<div class="foter_sot">
+					<li>
+						<a href="https://color.romanuke.com/">							
+							<i class="fa fa-telegram fa-2x" aria-hidden="true"></i>
+						</a>
+					</li>
+				</div>
+
+				<div class="foter_sot">
+					<li>
+						<a href="https://color.romanuke.com/">
+							<i class="fa fa-odnoklassniki fa-2x" aria-hidden="true"></i>
+						</a>
+					</li>
+				</div>
+				<div class="foter_sot">
+					<li>
+						<a href="https://color.romanuke.com/">
+							<i class="fa fa-vk fa-2x" aria-hidden="true"></i>
+						</a>
+					</li>					
+
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+	</div>
+
+
+
+
+
+</footer>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<script src="js/jQuery.js"></script>
+<script src="js/js.js"></script>
+</body>
+</html>
